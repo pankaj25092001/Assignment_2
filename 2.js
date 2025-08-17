@@ -1,12 +1,9 @@
-// //QUESTION 2
 
-
-// Simple JS program to get Chennai weather (browser version, uses callback)
 function getChennaiWeather(callback) {
 	const lat = 13.0827;
 	const lon = 80.2707;
 	const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
-    console.log(url);
+    //console.log(url);
 	fetch(url)
 		.then(response => response.json())
 		.then(data => callback(null, data.current_weather))
