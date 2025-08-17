@@ -32,7 +32,7 @@ function createBankAccount(initialBalance = 0) {
 
 const acc = createBankAccount(2000);
 acc.credit(100);
-acc.debit(200);
+// acc.debit(200);
 console.log(acc.getBalance())
 
 
