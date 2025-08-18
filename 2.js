@@ -10,6 +10,7 @@ function getChennaiWeather(callback) {
 		.catch(err => callback(err));
 }
 
+
 getChennaiWeather(function(err, weather) {
 	if (err) {
 		console.error('Failed to fetch weather:', err);
